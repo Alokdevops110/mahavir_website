@@ -238,24 +238,36 @@
     
 
         <script>
-            function sendToWhatsApp() {
-                let name = document.getElementById("name").value;
-                let mobile = document.getElementById("mobile").value;
-                let pickup = document.getElementById("pickup").value;
-                let drop = document.getElementById("drop").value;
-                let date = document.getElementById("date").value;
-                let time = document.getElementById("time").value;
-    
-                if (!name || !mobile || !pickup || !drop || !date || !time) {
-                    alert("Please fill in all fields.");
-                    return;
-                }
-    
-                let message = `New Booking Request:%0AName: ${name}%0AMobile: ${mobile}%0APickup: ${pickup}%0ADrop: ${drop}%0APickup Date: ${date}%0APickup Time: ${time}`;
-                let whatsappUrl = `https://wa.me/7987515051?text=${message}`;
-                
-                window.open(whatsappUrl, '_blank');
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            return date.toLocaleDateString('en-GB', options);
+        }
+
+    // Update input field to show formatted date on selection
+        document.getElementById('date').addEventListener('change', function() {
+            this.setAttribute('data-date', formatDate(this.value));
+        });
+          function sendToWhatsApp() {
+            let name = document.getElementById('name').value;
+            let mobile = document.getElementById('mobile').value;
+            let pickup = document.getElementById('pickup').value;
+            let drop = document.getElementById('drop').value;
+            let date = document.getElementById('date').value;
+            let time = document.getElementById('time').value;
+            
+            if (!name || !mobile || !pickup || !drop || !date || !time) {
+                alert("Please fill all details before booking.");
+                return;
             }
+            
+            let formattedDate = formatDate(date);
+            let formattedTime = new Date(`1970-01-01T${time}`).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+            let message = `Booking Details:\nName: ${name}\nMobile: ${mobile}\nPickup: ${pickup}\nDrop: ${drop}\nDate: ${formattedDate}\nTime: ${formattedTime}`;
+            let whatsappURL = `https://wa.me/7987515051?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+        }
         </script>
         
 
