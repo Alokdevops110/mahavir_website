@@ -102,12 +102,12 @@
             <input type="text" id="drop" placeholder="Drop Location" required>
         </div>
         <div class="form-group">
-            <i class="fas fa-calendar"></i>
-            <input type="date" id="date" required>
+            <label for="date">Pickup Date:</label>
+            <input type="date" id="date">
         </div>
         <div class="form-group">
-            <i class="fas fa-clock"></i>
-            <input type="time" id="time" required>
+            <label for="time">Pickup Time:</label>
+            <input type="time" id="time" step="900">
         </div>
         <button type="button" class="submit-btn" onclick="sendToWhatsApp()">Book Now</button>
     </form>
