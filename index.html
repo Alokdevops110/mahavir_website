@@ -80,6 +80,37 @@
             <li>✅ Airport Drop and Pickup – On time guaranteed!</li>
         </ul>
     </div>
+
+      
+    <!-- Booking Form -->
+    <h2>Book Your Ride</h2>
+    <form class="booking-form" id="bookingForm">
+        <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-phone"></i>
+            <input type="tel" id="mobile" placeholder="Mobile Number" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" id="pickup" placeholder="Pickup Location" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" id="drop" placeholder="Drop Location" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-calendar"></i>
+            <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-clock"></i>
+            <input type="time" id="time" required>
+        </div>
+        <button type="button" class="submit-btn" onclick="sendToWhatsApp()">Book Now</button>
+    </form>
     
     <h2>Available Cars</h2>
     <div class="container1">
@@ -97,7 +128,7 @@
 
 
         <div class="car-card">
-            <img src="images/Scorpio.jpg" alt="Scorpio" onclick="openSlider('Scorpio')">
+            <img src="images/Scorpio.png" alt="Scorpio" onclick="openSlider('Scorpio')">
             <div class="car-info">
                 <h3>Scorpio</h3>
                 <p>🚘 Used for: Adventure & Off-road Travel</p>
@@ -108,9 +139,9 @@
         </div>
 
         <div class="car-card">
-            <img src="images/Dzire.jpg" alt="Swift" onclick="openSlider('Swift')">
+            <img src="images/New_Dzire.jpeg" alt="Swift" onclick="openSlider('Swift')">
             <div class="car-info">
-                <h3>Swift</h3>
+                <h3>New Dzire</h3>
                 <p>🚘 Used for: City Travel</p>
                 <p>🧑‍🤝‍🧑 Seating Capacity: 4+1</p>
                 <a href="tel:7987515051" target="_blank" class="book-btn">Book Now</a>
@@ -128,9 +159,9 @@
             </div>
         </div>
         <div class="car-card" >
-            <img src="images/Dzire.jpg" alt="Dzire" onclick="openSlider('Dzire')">
+            <img src="images/Dzire.jpeg" alt="Dzire" onclick="openSlider('Dzire')">
             <div class="car-info">
-                <h3>Dzire</h3>
+                <h3>Swift Dzire</h3>
                 <p>🚘 Used for: Comfortable City Travel</p>
                 <p>🧑‍🤝‍🧑 Seating Capacity: 4+1</p>
                 <a href="tel:7987515051" target="_blank" class="book-btn">Book Now</a>
@@ -138,11 +169,11 @@
             </div>
         </div>
         <div class="car-card">
-            <img src="images/Ertiga.jpg" alt="Ertiga" onclick="openSlider('Ertiga')">
+            <img src="images/Ertiga.jpeg" alt="Ertiga" onclick="openSlider('Ertiga')">
             <div class="car-info">
                 <h3>Ertiga</h3>
-                <p>🚘 Used for: Comfortable City Travel</p>
-                <p>🧑‍🤝‍🧑 Seating Capacity: 4+1</p>
+                <p>🚘 Used for: Comfortable City & Highway Travel</p>
+                <p>🧑‍🤝‍🧑 Seating Capacity: 7+1</p>
                 <a href="tel:7987515051" target="_blank" class="book-btn">Book Now</a>
             </div>
         </div>
@@ -167,11 +198,11 @@
         function openSlider(carName) {
             let images = {
                 'Innova Crysta': ['images/Innova_crysta.jpg', 'images/Innova_crysta.jpg'],
-                'Scorpio': ['images/Scorpio.jpg', 'images/Scorpio.jpg'],
-                'Swift': ['images/Dzire.jpg', 'images/Dzire.jpg'],
+                'Scorpio': ['images/Scorpio.png', 'images/Scorpio.png'],
+                'Swift': ['images/New_Dzire.jpeg', 'images/New_Dzire.jpeg'],
                 'Kia Carens': ['images/kia-carens.webp', 'images/kia-carens.webp'],
-                'Dzire': ['images/Dzire.jpg', 'images/Dzire.jpg'],
-                'Ertiga': ['images/Ertiga.jpg', 'images/Ertiga.jpg'],
+                'Dzire': ['images/Dzire.jpeg', 'images/Dzire.jpeg'],
+                'Ertiga': ['images/Ertiga.jpeg', 'images/Ertiga.jpeg'],
             };
             
             currentImages = images[carName] || [];
@@ -205,6 +236,28 @@
             <p>&copy; 2025 Mahavir Tour's & Travels. All rights reserved.</p>
         </footer>
     
+
+        <script>
+            function sendToWhatsApp() {
+                let name = document.getElementById("name").value;
+                let mobile = document.getElementById("mobile").value;
+                let pickup = document.getElementById("pickup").value;
+                let drop = document.getElementById("drop").value;
+                let date = document.getElementById("date").value;
+                let time = document.getElementById("time").value;
+    
+                if (!name || !mobile || !pickup || !drop || !date || !time) {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+    
+                let message = `New Booking Request:%0AName: ${name}%0AMobile: ${mobile}%0APickup: ${pickup}%0ADrop: ${drop}%0APickup Date: ${date}%0APickup Time: ${time}`;
+                let whatsappUrl = `https://wa.me/7987515051?text=${message}`;
+                
+                window.open(whatsappUrl, '_blank');
+            }
+        </script>
+        
 
 </body>
 </html>
