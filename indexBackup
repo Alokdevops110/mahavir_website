@@ -5,66 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahavir Tour's & Travels</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-      
-        .welcome-section {
-            height: 73vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-       
-        .welcome-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-            animation: backgroundAnimation 10s infinite alternate;
-        }
-        @keyframes backgroundAnimation {
-            0% { background: linear-gradient(to right, #ff9966, #ff5e62); }
-            100% { background: linear-gradient(to right, #4facfe, #00f2fe); }
-        }
-        .containerLogoTxt {
-            color: #fff;
-            font-size: 3em;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 2s ease-in-out;
-        }
-        .taxi {
-            width: 120px;
-            position: absolute;
-            bottom: 50px;
-            animation: moveTaxi 5s linear infinite;
-        }
-        .containerLogo {
-            position: relative;
-            text-align: center;
-        }
-        .logo {
-            width: 150px;
-            animation: bounce 3s infinite;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        /* @keyframes moveTaxi {
-            0% { left: -120px; }
-            100% { left: 100%; }
-        } */
-        /* @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        } */
-    </style>
+
 </head>
 <body>
 
@@ -82,30 +23,17 @@
         <p>Owner: Ravi Raja</p>
         <p>Contact: <a href="tel:7987515051" class="call-btn">📞 7987515051</a>, <a href="tel:7049515051" class="call-btn">📞 7049515051</a></p>
         <p>Address: T.V. Tower Road, Raigarh (C.G.)</p>
-        <br>
-        
-
-   
-
     </div>
-    <div class="welcome-section">
-
-        <div class="containerLogo">
-            <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Logo" class="logo">
-            <h1 class="containerLogoTxt"> Welcome To Mahavir Tour's & Travel</h1>
-        </div>
-        <!-- <img src="images/Taxi.png" alt="Taxi" class="taxi"> -->
-
-     </div>
+    
 
     <div class="container">
 
-        <!-- <div class="welcome-section"> -->
-            <!-- <h1>Welcome 🙏</h1> -->
-            <!-- <p>Your trusted travel partner for comfortable, safe, and affordable journeys. With our well-maintained fleet and experienced drivers, we ensure a hassle-free experience for every trip</p>
+        <div class="welcome-section">
+            <h1>Welcome to Mahavir Tour's & Travels 🙏</h1>
+            <p>Your trusted travel partner for comfortable, safe, and affordable journeys. With our well-maintained fleet and experienced drivers, we ensure a hassle-free experience for every trip</p>
             <p>🛣️ Whether you need a car for an airport transfer ✈️, a business trip 💼, or a family vacation 👨‍👩‍👦, we've got you covered with our top-class service 🚗💨</p>
-            <p>📲 Book your ride now via WhatsApp! Click below to enjoy a smooth journey with Mahavir Tour's & Travels 💚</p> -->
-        <!-- </div> -->
+            <p>📲 Book your ride now via WhatsApp! Click below to enjoy a smooth journey with Mahavir Tour's & Travels 💚</p>
+        </div>
 
         <br>
         <br>
