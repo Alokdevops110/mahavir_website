@@ -221,7 +221,7 @@ footer {
     font-family: Arial, sans-serif;
     overflow: hidden;
     animation: backgroundAnimation 10s infinite alternate;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
