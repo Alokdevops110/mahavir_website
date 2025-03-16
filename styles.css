@@ -5,11 +5,11 @@ body {
     background-color: #f8f9fa;
     text-align: center;
 }
-
+/* #40916c old code*/
 .company-info {
-    background-color: #2d6a4f;
+    background-color: #397f60;
+        /* background: linear-gradient(to right, #52b788, #397f60); */
     color: white;
-    /* padding: 20px; */
     width: 100%;
     overflow: hidden;
 }
@@ -90,7 +90,8 @@ ul {
 
 footer {
     margin-top: 20px;
-    background-color: #2d6a4f;
+    /* background-color: #2d6a4f; */
+    background: linear-gradient(to right, #52b788, #397f60);
     color: white;
     padding: 10px;
 }
