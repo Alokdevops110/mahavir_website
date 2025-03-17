@@ -339,3 +339,6 @@ footer {
 .call-float img:hover {
     transform: scale(1.1);
 }
+.pTag {
+    margin: 5;
+}
