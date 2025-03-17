@@ -7,11 +7,22 @@ body {
 }
 /* #40916c old code*/
 .company-info {
-    background-color: #397f60;
+
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Adds space between the logo and the text */
+
+    background-color: #15BAE9/*#397f60*/;
         /* background: linear-gradient(to right, #52b788, #397f60); */
     color: white;
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
+}
+
+
+.logoCompanyInfo {
+    width: 50px;  /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .container {
@@ -91,7 +102,7 @@ ul {
 footer {
     margin-top: 20px;
     /* background-color: #2d6a4f; */
-    background: linear-gradient(to right, #52b788, #397f60);
+    background: linear-gradient(to right, #15BAE9, #15BAE9);
     color: white;
     padding: 10px;
 }
@@ -217,11 +228,11 @@ footer {
        
 .welcome-section {
     display: flex;
-    background: linear-gradient(to right, #52b788, #40916c);
+    background: linear-gradient(to right, #52BABB, #52BABB);
     font-family: Arial, sans-serif;
     overflow: hidden;
     animation: backgroundAnimation 10s infinite alternate;
-    height: 85vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,7 +243,7 @@ footer {
 
 }
 @keyframes backgroundAnimation {
-    0% { background: linear-gradient(to right, #52b788 , #40916c); }
+    0% { background: linear-gradient(to right, #52BABB , #52BABB); }
     /* 100% { background: linear-gradient(to right, #4facfe, #00f2fe); } */
 }
 .containerLogoTxt {
