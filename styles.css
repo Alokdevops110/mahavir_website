@@ -12,9 +12,9 @@ body {
     align-items: center; /* Aligns items vertically */
     gap: 10px; /* Adds space between the logo and the text */
 
-    background-color: #15BAE9/*#397f60*/;
+    background-color:white /*#15BAE9, #397f60*/;
         /* background: linear-gradient(to right, #52b788, #397f60); */
-    color: white;
+    color: rgb(0, 0, 0);
     /* width: 100%; */
     overflow: hidden;
 }
