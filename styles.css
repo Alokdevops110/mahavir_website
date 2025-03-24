@@ -102,7 +102,7 @@ ul {
 footer {
     margin-top: 20px;
     /* background-color: #2d6a4f; */
-    background: linear-gradient(to right, #52BABB, #52BABB);
+    background: black;
     color: white;
     padding: 10px;
 }
