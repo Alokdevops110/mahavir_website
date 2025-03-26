@@ -232,8 +232,6 @@ footer {
     font-family: Arial, sans-serif;
     overflow: hidden;
     animation: backgroundAnimation 10s infinite alternate;
-    height: 95vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -261,6 +259,9 @@ footer {
 .containerLogo {
     position: relative;
     text-align: center;
+    height: 95vh;
+    margin-top: 30px;
+
 }
 .logo {
     width: 400px;
