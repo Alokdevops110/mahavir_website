@@ -241,7 +241,7 @@ footer {
 
 }
 @keyframes backgroundAnimation {
-    0% { background: linear-gradient(to right, #52BABB , #52BABB); }
+    /* 0% { background: linear-gradient(to right, #52BABB , #52BABB); } */
     /* 100% { background: linear-gradient(to right, #4facfe, #00f2fe); } */
 }
 .containerLogoTxt {
