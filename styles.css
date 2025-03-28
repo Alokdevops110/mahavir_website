@@ -228,7 +228,7 @@ footer {
        
 .welcome-section {
     display: flex;
-    background: linear-gradient(to right, #52BABB, #52BABB);
+    background: black;/*linear-gradient(to right, #52BABB, #52BABB);*/
     font-family: Arial, sans-serif;
     overflow: hidden;
     animation: backgroundAnimation 10s infinite alternate;
