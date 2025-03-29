@@ -273,13 +273,15 @@ footer {
     position: relative;
     text-align: center;
     height: 95vh;
-    margin-top: 30px;
+    margin-top: 5px;
 
 }
 .logo {
     width: 400px;
     height: auto;
     animation: bounce 3s infinite;
+    visibility: hidden;
+
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
