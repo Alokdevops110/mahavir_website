@@ -269,13 +269,9 @@ footer {
     bottom: 50px;
     animation: moveTaxi 5s linear infinite;
 } */
-.containerLogo {
-    position: relative;
-    text-align: center;
-    height: 95vh;
-    margin-top: 10px;
 
-}
+
+
 .logo {
     width: 400px;
     height: auto;
@@ -357,6 +353,30 @@ footer {
     transform: scale(1.1);
 }
 .pTag {
-    margin: 5;
-    margin-top: 90px;
+    /* margin: 5;
+    margin-top: 90px; */
+
+    /* margin-top: auto; Pushes it to the bottom */
+    /* margin-bottom: 10; */
+    text-align: center;
+    margin-bottom: -20px;
 }
+
+.division {
+    flex-grow: 1; /* Takes up all available space */
+    width: 100%; /* Ensures full width */
+}
+.containerLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Ensure full height if needed */
+    height: 95vh;
+
+}
+/* .containerLogo { */
+    /* position: relative; */
+    /* text-align: center; */
+    /* margin-top: 10px; */
+
+/* } */
