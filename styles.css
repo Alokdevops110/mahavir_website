@@ -149,15 +149,12 @@ footer {
     font-size: 28px;
   }
   
-  .mahavir {
+  .mahavir,.travels {
     color: #f4b400;
     font-weight: bold;
   }
   
-  .travels {
-    color: white;
-    font-weight: 600;
-  }
+  
   
   .footer-description {
     margin-bottom: 30px;
