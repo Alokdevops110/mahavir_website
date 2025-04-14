@@ -178,7 +178,7 @@ footer {
   }
   
   .contact-item {
-    display: flex;
+    /* display: flex; */
     align-items: flex-start;
     gap: 15px;
     flex-wrap: wrap;
