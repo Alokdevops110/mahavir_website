@@ -4,7 +4,17 @@ body {
     padding: 0;
     background-color: #f8f9fa;
     text-align: center;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+  
 }
+
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+
+
 /* #40916c old code*/
 .company-info {
 
@@ -168,7 +178,7 @@ footer {
   }
   
   .contact-item {
-    /* display: flex; */
+    display: flex;
     align-items: flex-start;
     gap: 15px;
     flex-wrap: wrap;
