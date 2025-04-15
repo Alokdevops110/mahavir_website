@@ -115,9 +115,12 @@
         <label for="vehicleType">Vehicle Type:</label>
         <select id="vehicleType" required>
             <option value="">Select Vehicle</option>
-            <option value="Sedian 4+1">Sedian 4+1</option>
-            <option value="Scorpio 7+1">Scorpio 7+1</option>
-            <option value="New Dezire 4+1">New Dezire 4+1</option>
+            <option value="Innova Crysta 7+1">Innova Crysta 7+1</option>
+            <option value="Scorpio 9+1">Scorpio 9+1</option>
+            <option value="Ertiga 7+1">Ertiga 7+1</option>
+            <option value="Kia Carens 7+1">Kia Carens 7+1</option>
+            <option value="Swift Dzire 4+1">Swift Dzire 4+1</option>
+            <option value="New Dzire 4+1">New Dzire 4+1</option>
         </select>
     </div>
 
@@ -513,7 +516,7 @@
         hour12: true
     });
 
-    let message = `🚖 *Booking Details*:\n\n👤 Name: ${name}\n📱 Mobile: ${mobile}\n📍 Pickup: ${pickup}\n📍 Drop: ${drop}\n🚗 Vehicle: ${vehicleType}\n🔁 Trip Type: ${tripType}\n👥 Passengers: ${passengers}\n📅 Date: ${formattedDate}\n🕒 Time: ${formattedTime}`;
+    let message = `Booking Details:\n\nName: ${name}\nMobile: ${mobile}\nPickup: ${pickup}\nDrop: ${drop}\nVehicle: ${vehicleType}\nTrip Type: ${tripType}\nPassengers: ${passengers}\nDate: ${formattedDate}\nTime: ${formattedTime}`;
 
     let whatsappURL = `https://wa.me/7987515051?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
