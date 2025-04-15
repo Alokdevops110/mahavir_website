@@ -288,6 +288,23 @@ footer {
     font-size: 16px;
     padding: 5px;
 }
+
+/* new settings */
+
+/* Style for select input */
+.form-group select {
+    flex: 2;
+    padding: 8px;
+    border: none;           /* Removes border */
+    background-color: #f8f8f8; /* Light background for visibility */
+    border-radius: 5px;
+    appearance: none;       /* Removes default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: right;      /* Align text inside dropdown to right */
+}
+
+
 .submit-btn {
     width: 100%;
     padding: 10px;
